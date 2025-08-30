@@ -21,7 +21,8 @@ void AddArenaHUDUIExtension() {
 
   FPlaylistUIExtension NewUIExtension;
   NewUIExtension.Slot = EPlaylistUIExtensionSlot::Primary;
-  NewUIExtension.WidgetClass.ObjectID.AssetPathName = UKismetStringLibrary::Conv_StringToName("/Game/UI/Frontend/Showdown/ShowdownScoringHUD.ShowdownScoringHUD_C");
+  /* Replace '/Game/UI/Competitive/Arena/ArenaScoringHUD.ArenaScoringHUD_C' with '/Game/UI/Frontend/Showdown/ShowdownScoringHUD.ShowdownScoringHUD_C' if you want the tournament HUD! */
+  NewUIExtension.WidgetClass.ObjectID.AssetPathName = UKismetStringLibrary::Conv_StringToName("/Game/UI/Competitive/Arena/ArenaScoringHUD.ArenaScoringHUD_C");
 
   ArenaPlaylist->UIExtensions.Add(NewUIExtension);
 }
